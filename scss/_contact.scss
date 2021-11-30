@@ -1,0 +1,94 @@
+.body-contact {
+    background: black url("../images/shut.jpg") no-repeat top center fixed;
+    background-size: cover;
+    .main-contact {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 200;
+        .horror-form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                border: none;
+                border-radius: .5rem;
+                outline: none;
+                width: 100%;
+                height: 3rem;
+                background: rgba(46, 42, 42, .5);
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+                color: rgb(218, 216, 216);
+                font-size: 1.8rem;
+                font-family: veintiocho;
+            }
+            textarea {
+                height: 20rem;
+                background: rgba(46, 42, 42, .5) url("../images/screamx.png") no-repeat right bottom;
+                background-size: contain;
+                resize: none;
+                border-radius: .5rem;
+                padding: 1rem;
+                font-family: veintiocho;
+                outline: none;
+                border: none;
+                font-size: 1.8rem;
+                font-family: veintiocho;
+                color: rgb(218, 216, 216);
+                margin-bottom: 1rem;
+            }
+            .more-blood {
+                position: absolute;
+                width: 60%;
+                top: 25.5rem;
+                left: -3.8rem;
+                z-index: -200;
+                opacity: .6;
+            }
+            textarea:hover, input:hover {
+                box-shadow: 0px 0px 10px 1px white;
+                transition: .2s ease;
+            }
+            textarea::placeholder {
+                font-size: 1.8rem;
+            }
+            [type="submit"] {
+                align-self: flex-end;
+                padding: .2rem;
+                width: 7.5rem;
+                text-align: center;
+                color: black;
+            }
+            [type="submit"]:hover {
+                box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+            }
+            [type="submit"]:active {
+                transform: translateY(.1rem) scale(.9);
+                box-shadow: none;
+            }
+        }
+        .game {
+            position: absolute;
+            bottom: -9rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .game-text {
+                color: rgb(195, 15, 15);
+                font-family: friday;
+                font-size: 2rem;
+                inline-size: min-content;
+                text-align: center;
+                transform: translateX(-5rem) rotateZ(-30deg);
+            }
+            .game-img {
+                width: 12rem;
+            }
+        }
+    }
+}

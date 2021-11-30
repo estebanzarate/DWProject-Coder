@@ -1,0 +1,89 @@
+.body-gallery {
+    background: black url("../images/haunted.jpg") no-repeat bottom center fixed;
+    background-size: cover;
+    .main-gallery {
+        margin-bottom: 3rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+        gap: .6rem;
+        img {
+            width: 100%;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: .5rem;
+            opacity: .6;
+            z-index: 300;
+        }
+        img:hover {
+            outline: 3px inset red;
+            opacity: 1;
+            transition: .5s ease;
+        }
+        img:first-child {
+            grid-column: span 2;
+            object-position: 0 -4.5rem;
+        }
+        
+        img:nth-child(2) {
+            grid-row: span 2;
+            height: 100%;
+            object-position: -8.5rem 0;
+        }
+        
+        img:nth-child(4) {
+            grid-column: span 2;
+        }
+        
+        img:nth-child(6) {
+            grid-row: span 3;
+            height: 100%;
+        }
+        
+        img:nth-child(8) {
+            grid-row: span 2;
+            height: 100%;
+        }
+        
+        img:nth-child(13) {
+            grid-column: span 2;
+        }
+        
+        img:nth-child(17) {
+            grid-column: span 3;
+            object-position: 0 -7rem;
+        }
+        
+        img:nth-child(21) {
+            grid-row: span 2;
+            height: 100%;
+        }
+        
+        img:nth-child(23) {
+            grid-column: span 2;
+            grid-row: span 2;
+            height: 100%;
+        }
+        
+        img:nth-child(27) {
+            grid-column: span 2;
+        }
+        
+        img:nth-child(28) {
+            grid-column: span 3;
+            object-position: 0 -3rem;
+        }
+        
+        img:nth-child(31) {
+            grid-column: span 2;
+            object-position: 0 -3rem;
+        }
+        
+        img:last-child {
+            grid-column: span 2;
+            object-position: 0 -5rem;
+        }
+    }
+}

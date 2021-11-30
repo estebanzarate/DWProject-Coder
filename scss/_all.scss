@@ -1,0 +1,146 @@
+::-webkit-scrollbar {
+    width: .8rem;
+    background-color: rgb(70, 69, 69);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #f50000; 
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	background: black url("../images/itwall.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 200;
+		img {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			opacity: .6;
+			z-index: -400;
+		}
+		ul {
+			height: 5rem;
+			list-style: none;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			li {
+				text-align: center;
+				width: fit-content;
+				margin-right: 3rem;
+				a {
+					color: rgb(255, 255, 255);
+					text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+					text-decoration: none;
+					font-size: 1.3rem;
+				}
+			}
+			@keyframes zoom {
+				0% {
+					transform: scale(1, 1);
+				}
+				50% {
+					transform: scale(1.2, 1.2);
+				}
+				100% {
+					transform: scale(1, 1);
+				}
+			}
+			li:hover {
+				animation: zoom .5s ease 1;
+			}
+		}
+	}
+
+	main {
+		flex: 1;
+		margin-top: 15rem;
+	}
+
+	footer {
+		width: 100%;
+		display: flex;
+		z-index: 1000;
+		.social-media {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 10rem;
+			a {
+				font-size: 2rem;
+				color: rgb(173, 7, 7);
+				margin: 0 0 .8rem .8rem;
+			}
+			a:link {
+				color: rgb(173, 7, 7);
+			}
+			a:visited {
+				color: rgb(173, 7, 7);
+			}
+			a:hover {
+				text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
+			}
+			a:active {
+				color: red;
+			}
+		}
+		address {
+			display: flex;
+			.fas {
+				font-size: 5rem;
+				color: red;
+				height: fit-content;
+				align-self: center;
+			}
+			.place {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				p {
+					color: rgb(194, 186, 186);
+					font-family: friday;
+					font-size: 3rem;
+					text-shadow: 2px 2px#000;
+					text-align: center;
+					span {
+						font-family: veintiocho;
+						color: red;
+						opacity: .8;
+					}
+				}
+			}
+		}
+		.spoti {
+			display: flex;
+			flex: 1;
+			align-items: flex-end;
+			justify-content: flex-end;
+			iframe {
+				width: 25rem;
+				border-bottom-left-radius: 1rem;
+				border-top-right-radius: 1rem;
+				margin: 0 1rem 1rem;
+			}
+			iframe:hover {
+				height: 100%;
+				transition: .5s ease;
+				opacity: .5;
+				box-shadow: 0 1px 1px red;
+			}
+		}
+	}
+}
