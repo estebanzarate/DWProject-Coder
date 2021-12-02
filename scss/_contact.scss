@@ -1,5 +1,5 @@
 .body-contact {
-    background: black url("../images/shut.jpg") no-repeat top center fixed;
+    @include bgImg(black, no-repeat, top center, fixed);
     background-size: cover;
     .main-contact {
         position: relative;

@@ -23,9 +23,6 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: black url("../images/itwall.png") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body header {
   position: fixed;
@@ -149,6 +146,26 @@ body footer .spoti iframe:hover {
   box-shadow: 0 1px 1px red;
 }
 
+.indexBg {
+  background-image: url("../images/bg/indexBg.jpg");
+}
+
+.usBg {
+  background-image: url("../images/bg/usBg.jpg");
+}
+
+.marketBg {
+  background-image: url("../images/bg/marketBg.jpg");
+}
+
+.galleryBg {
+  background-image: url("../images/bg/galleryBg.jpg");
+}
+
+.contactBg {
+  background-image: url("../images/bg/contactBg.jpg");
+}
+
 @font-face {
   font-family: veintiocho;
   src: url(../fonts/28/28.ttf);
@@ -157,20 +174,26 @@ body footer .spoti iframe:hover {
   font-family: friday;
   src: url(../fonts/friday/friday.ttf);
 }
-.main-index {
+.body-index {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body-index .main-index {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.main-index .help {
+.body-index .main-index .help {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-index .help h1 {
+.body-index .main-index .help h1 {
   position: absolute;
   top: 20%;
   font-family: "Londrina Shadow", cursive;
@@ -183,7 +206,7 @@ body footer .spoti iframe:hover {
   z-index: 200;
   animation: help 1s ease 1;
 }
-.main-index .help .scream {
+.body-index .main-index .help .scream {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -199,7 +222,7 @@ body footer .spoti iframe:hover {
     transform: rotateZ(15deg);
   }
 }
-.main-index .help .scream img {
+.body-index .main-index .help .scream img {
   width: 60%;
   animation: move 10s ease-in-out infinite;
   z-index: -500;
@@ -215,7 +238,7 @@ body footer .spoti iframe:hover {
     transform: scale(1, 1) rotateZ(8deg);
   }
 }
-.main-index .call {
+.body-index .main-index .call {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -223,18 +246,18 @@ body footer .spoti iframe:hover {
   width: 50%;
   font-family: veintiocho;
 }
-.main-index .call h2 {
+.body-index .main-index .call h2 {
   color: black;
   font-size: 8rem;
   text-align: center;
   font-weight: initial;
   color: #505050;
 }
-.main-index .call h2 span {
+.body-index .main-index .call h2 span {
   color: whitesmoke;
   transform: translateY(10px);
 }
-.main-index .call h3 {
+.body-index .main-index .call h3 {
   position: absolute;
   top: 4rem;
   right: 3rem;
@@ -248,8 +271,10 @@ body footer .spoti iframe:hover {
 }
 
 .body-us {
-  background: black url("../images/exorcist.jpg") no-repeat center fixed;
-  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 .body-us .blood-us {
   opacity: 0.9;
@@ -282,10 +307,12 @@ body footer .spoti iframe:hover {
   margin: 0 1rem;
 }
 .body-us .main-us .us .us__container .us__img {
+  position: relative;
   width: 20rem;
   height: 20rem;
   margin: 0 0 1rem;
   border-radius: 50%;
+  position: relative;
 }
 .body-us .main-us .us .us__container .us__img img {
   width: 100%;
@@ -295,10 +322,17 @@ body footer .spoti iframe:hover {
   box-shadow: 2px 2px 100px 10px #181010;
   object-fit: cover;
 }
-.body-us .main-us .us .us__container .us__img img:hover {
+.body-us .main-us .us .us__container .us__img img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.body-us .main-us .us .us__container .us__img img:last-child:hover {
   filter: blur(0.3px);
   box-shadow: 2px 2px 100px 0px rgba(255, 255, 255, 0.233);
   transition: 0.6s ease;
+  opacity: 1;
 }
 .body-us .main-us .us .us__container h2 {
   width: 20rem;
@@ -335,8 +369,10 @@ body footer .spoti iframe:hover {
 }
 
 .body-market {
-  background: url("../images/hwallh.jpg") bottom center fixed;
-  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
   opacity: 0.9;
 }
 .body-market .main-market {
@@ -420,9 +456,10 @@ body footer .spoti iframe:hover {
   color: black;
   font-size: 2rem;
   font-family: veintiocho;
+  transform-origin: top right;
 }
 .body-market .main-market .buy-item .button input[type=button]:active {
-  transform: rotateZ(-45deg) translateY(50%);
+  transform: rotateZ(-45deg);
   transition: 0.1s;
   background-color: red;
   color: white;
@@ -432,8 +469,10 @@ body footer .spoti iframe:hover {
 }
 
 .body-gallery {
-  background: black url("../images/haunted.jpg") no-repeat bottom center fixed;
-  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
 }
 .body-gallery .main-gallery {
   margin-bottom: 3rem;
@@ -510,7 +549,10 @@ body footer .spoti iframe:hover {
 }
 
 .body-contact {
-  background: black url("../images/shut.jpg") no-repeat top center fixed;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
   background-size: cover;
 }
 .body-contact .main-contact {
@@ -624,38 +666,39 @@ body footer .spoti iframe:hover {
   body .main {
     margin-top: 7rem;
   }
-  body footer {
+
+  footer {
     margin-top: 5rem;
     flex-direction: column;
     justify-content: flex-end;
   }
-  body footer .social-media {
+  footer .social-media {
     flex-direction: row;
     justify-content: center;
     width: 100%;
     margin-bottom: 1rem;
   }
-  body footer .social-media a {
+  footer .social-media a {
     font-size: 1.8rem;
     margin: 0 0.9rem;
   }
-  body footer address {
+  footer address {
     order: -1;
     margin-bottom: 0.7rem;
     width: 100%;
     justify-content: center;
   }
-  body footer address .fas {
+  footer address .fas {
     font-size: 3rem;
   }
-  body footer address .place p {
+  footer address .place p {
     font-size: 2rem;
   }
-  body footer .spoti {
+  footer .spoti {
     width: 100%;
     margin-left: 0;
   }
-  body footer .spoti iframe {
+  footer .spoti iframe {
     margin: 0;
   }
 

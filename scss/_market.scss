@@ -1,6 +1,5 @@
 .body-market {
-    background: url("../images/hwallh.jpg") bottom center fixed;
-    background-size: cover;
+    @include bgImg(black, no-repeat, bottom center, fixed);
     opacity: .9;
     .main-market {
         width: 70%;
@@ -82,9 +81,10 @@
                     color: black;
                     font-size: 2rem;
                     font-family: veintiocho;
+                    transform-origin: top right;
                 }
                 input[type="button"]:active {
-                    transform: rotateZ(-45deg) translateY(50%);
+                    transform: rotateZ(-45deg);
                     transition: .1s;
                     background-color: red;
                     color: white;

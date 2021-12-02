@@ -1,6 +1,5 @@
 .body-gallery {
-    background: black url("../images/haunted.jpg") no-repeat bottom center fixed;
-    background-size: cover;
+    @include bgImg(black, no-repeat, bottom center, fixed);
     .main-gallery {
         margin-bottom: 3rem;
         width: 80%;

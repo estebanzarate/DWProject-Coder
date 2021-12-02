@@ -1,89 +1,92 @@
-.main-index {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    .help {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1 {
-            position: absolute;
-            top: 20%;
-            font-family: 'Londrina Shadow', cursive;
-            font-size: 8rem;
-            color: rgb(207, 0, 0);
-            text-align: center;
-            letter-spacing: .4rem;
-            text-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
-            transform: rotateZ(8deg);
-            z-index: 200;
-            animation: help 1s ease 1;
-        }
-        .scream {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            @keyframes move {
-                0% {
-                    transform: rotateZ(15deg);
-                }
-                50% {
-                    transform: rotateZ(-2deg);
-                }
-                100% {
-                    transform: rotateZ(15deg);
-                }
-            }
-            img {
-                width: 60%;
-                animation: move 10s ease-in-out infinite;
-                z-index: -500;
-            }
-        }
-        @keyframes help {
-            0% {
-                transform: scale(0) rotateZ(8deg);
-            }
-            50% {
-                transform: scale(2, 2) rotateZ(8deg);
-            }
-            100% {
-                transform: scale(1, 1) rotateZ(8deg);
-            }
-        }
-    }
-    .call {
+.body-index {
+    @include bgImg(black, no-repeat, center, fixed);
+    .main-index {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        font-family: veintiocho;
-        h2 {
-            color: rgb(0, 0, 0);
-            font-size: 8rem;
-            text-align: center;
-            font-weight: initial;
-            color: rgb(80, 80, 80);
-            span {
-                color: whitesmoke;
-                transform: translateY(10px);
+        width: 100%;
+        .help {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                position: absolute;
+                top: 20%;
+                font-family: 'Londrina Shadow', cursive;
+                font-size: 8rem;
+                color: rgb(207, 0, 0);
+                text-align: center;
+                letter-spacing: .4rem;
+                text-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+                transform: rotateZ(8deg);
+                z-index: 200;
+                animation: help 1s ease 1;
+            }
+            .scream {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                @keyframes move {
+                    0% {
+                        transform: rotateZ(15deg);
+                    }
+                    50% {
+                        transform: rotateZ(-2deg);
+                    }
+                    100% {
+                        transform: rotateZ(15deg);
+                    }
+                }
+                img {
+                    width: 60%;
+                    animation: move 10s ease-in-out infinite;
+                    z-index: -500;
+                }
+            }
+            @keyframes help {
+                0% {
+                    transform: scale(0) rotateZ(8deg);
+                }
+                50% {
+                    transform: scale(2, 2) rotateZ(8deg);
+                }
+                100% {
+                    transform: scale(1, 1) rotateZ(8deg);
+                }
             }
         }
-        h3 {
-            position: absolute;
-            top: 4rem;
-            right: 3rem;
-            color: red;
-            transform: rotateZ(-15deg);
-            font-size: 8rem;
-            text-align: center;
-            inline-size: min-content;
-            line-height: .8;
-            font-weight: initial;
+        .call {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            font-family: veintiocho;
+            h2 {
+                color: rgb(0, 0, 0);
+                font-size: 8rem;
+                text-align: center;
+                font-weight: initial;
+                color: rgb(80, 80, 80);
+                span {
+                    color: whitesmoke;
+                    transform: translateY(10px);
+                }
+            }
+            h3 {
+                position: absolute;
+                top: 4rem;
+                right: 3rem;
+                color: red;
+                transform: rotateZ(-15deg);
+                font-size: 8rem;
+                text-align: center;
+                inline-size: min-content;
+                line-height: .8;
+                font-weight: initial;
+            }
         }
     }
 }
