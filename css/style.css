@@ -138,6 +138,7 @@ body footer .spoti iframe {
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 1rem;
   margin: 0 1rem 1rem;
+  border: none;
 }
 body footer .spoti iframe:hover {
   height: 100%;
@@ -270,6 +271,166 @@ body footer .spoti iframe:hover {
   font-weight: initial;
 }
 
+.usDes-1 {
+  animation-name: usDes;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-2 {
+  animation-name: usDes;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-3 {
+  animation-name: usDes;
+  animation-duration: 0.9s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-4 {
+  animation-name: usDes;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-5 {
+  animation-name: usDes;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-6 {
+  animation-name: usDes;
+  animation-duration: 1.8s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-7 {
+  animation-name: usDes;
+  animation-duration: 2.1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-8 {
+  animation-name: usDes;
+  animation-duration: 2.4s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-9 {
+  animation-name: usDes;
+  animation-duration: 2.7s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-10 {
+  animation-name: usDes;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-11 {
+  animation-name: usDes;
+  animation-duration: 3.3s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-12 {
+  animation-name: usDes;
+  animation-duration: 3.6s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-13 {
+  animation-name: usDes;
+  animation-duration: 3.9s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-14 {
+  animation-name: usDes;
+  animation-duration: 4.2s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-15 {
+  animation-name: usDes;
+  animation-duration: 4.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-16 {
+  animation-name: usDes;
+  animation-duration: 4.8s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-17 {
+  animation-name: usDes;
+  animation-duration: 5.1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-18 {
+  animation-name: usDes;
+  animation-duration: 5.4s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-19 {
+  animation-name: usDes;
+  animation-duration: 5.7s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.usDes-20 {
+  animation-name: usDes;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 .body-us {
   background-color: black;
   background-repeat: no-repeat;
@@ -294,6 +455,17 @@ body footer .spoti iframe:hover {
   flex-direction: column;
   align-items: center;
   width: 80%;
+}
+.body-us .main-us .crazy {
+  text-align: center;
+  font-family: friday;
+  font-size: 4rem;
+  z-index: 500;
+  color: #e10000;
+  align-self: flex-end;
+  transform: rotateZ(3deg) translateX(10rem);
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 1px 2px #fff, -1px -1px 2px #fff;
 }
 .body-us .main-us .us {
   display: flex;
@@ -342,8 +514,19 @@ body footer .spoti iframe:hover {
   color: rgba(255, 255, 255, 0.705);
   text-shadow: 1px 1px 2px black;
   text-align: center;
-  letter-spacing: 0.3rem;
   padding: 0 1rem;
+}
+@keyframes usDes {
+  75% {
+    text-shadow: 2px 2px 3px red, -1px -1px 3px red;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+.body-us .main-us .us .us__container h2 span {
+  margin: -0.1rem;
 }
 .body-us .main-us .mission {
   position: relative;
@@ -666,39 +849,37 @@ body footer .spoti iframe:hover {
   body .main {
     margin-top: 7rem;
   }
-
-  footer {
+  body footer {
     margin-top: 5rem;
     flex-direction: column;
     justify-content: flex-end;
   }
-  footer .social-media {
+  body footer .social-media {
     flex-direction: row;
     justify-content: center;
     width: 100%;
     margin-bottom: 1rem;
   }
-  footer .social-media a {
+  body footer .social-media a {
     font-size: 1.8rem;
     margin: 0 0.9rem;
   }
-  footer address {
+  body footer address {
     order: -1;
     margin-bottom: 0.7rem;
     width: 100%;
     justify-content: center;
   }
-  footer address .fas {
+  body footer address .fas {
     font-size: 3rem;
   }
-  footer address .place p {
+  body footer address .place p {
     font-size: 2rem;
   }
-  footer .spoti {
-    width: 100%;
-    margin-left: 0;
+  body footer .spoti {
+    padding: 0.5rem;
   }
-  footer .spoti iframe {
+  body footer .spoti iframe {
     margin: 0;
   }
 
@@ -750,6 +931,13 @@ body footer .spoti iframe:hover {
   }
   .body-us .main-us {
     margin-top: 10rem;
+  }
+  .body-us .main-us .crazy {
+    font-size: 1.5rem;
+    margin: 0;
+    transform: translateX(1rem) translateY(-2rem) rotateZ(5deg);
+    inline-size: min-content;
+    width: 10rem;
   }
   .body-us .main-us .us {
     width: 100%;
