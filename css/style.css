@@ -829,275 +829,7 @@ body footer .spoti iframe:hover {
   width: 12rem;
 }
 
-@media screen and (max-width: 480px) {
-  body header {
-    position: absolute;
-    top: 0;
-  }
-  body header nav ul {
-    justify-content: flex-end;
-    align-items: center;
-    height: 4rem;
-    margin-right: 1.5rem;
-  }
-  body header nav ul li {
-    margin: 0.3rem;
-  }
-  body header nav ul li a {
-    font-size: 1.1rem;
-  }
-  body .main {
-    margin-top: 7rem;
-  }
-  body footer {
-    margin-top: 5rem;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  body footer .social-media {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  body footer .social-media a {
-    font-size: 1.8rem;
-    margin: 0 0.9rem;
-  }
-  body footer address {
-    order: -1;
-    margin-bottom: 0.7rem;
-    width: 100%;
-    justify-content: center;
-  }
-  body footer address .fas {
-    font-size: 3rem;
-  }
-  body footer address .place p {
-    font-size: 2rem;
-  }
-  body footer .spoti {
-    padding: 0.5rem;
-  }
-  body footer .spoti iframe {
-    margin: 0;
-  }
-
-  .body-index {
-    min-height: 100vh;
-    background-position: -48rem;
-  }
-  .body-index .main-index {
-    margin-top: 10rem;
-  }
-  .body-index .main-index .help h1 {
-    top: 3.5rem;
-    font-size: 2.5rem;
-    letter-spacing: 0.25rem;
-    text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
-  }
-  .body-index .main-index .help .scream img {
-    width: 100%;
-  }
-  .body-index .main-index .call {
-    margin: 3.5rem 0;
-    width: 80%;
-  }
-  .body-index .main-index .call h2 {
-    font-size: 3rem;
-    text-shadow: 0.5px 0.5px 0.5px #1d1c1c, -0.5px -0.5px 0.5px #1d1c1c;
-  }
-  .body-index .main-index .call h2 span {
-    font-size: 2.8rem;
-  }
-  .body-index .main-index .call h3 {
-    top: 1.5rem;
-    right: -1.7rem;
-    font-size: 3.5rem;
-  }
-
-  .body-us {
-    background: cover no-repeat;
-    background-position: -73rem;
-    background-attachment: fixed;
-  }
-  .body-us .feel {
-    top: 4rem;
-    left: 0.1rem;
-    font-size: 2rem;
-    inline-size: 50%;
-    text-align: center;
-  }
-  .body-us .main-us {
-    margin-top: 10rem;
-  }
-  .body-us .main-us .crazy {
-    font-size: 1.5rem;
-    margin: 0;
-    transform: translateX(1rem) translateY(-2rem) rotateZ(5deg);
-    inline-size: min-content;
-    width: 10rem;
-  }
-  .body-us .main-us .us {
-    width: 100%;
-    flex-direction: column;
-    align-self: center;
-    margin-bottom: 1.5rem;
-  }
-  .body-us .main-us .us .us__container {
-    margin: 0 rem;
-  }
-  .body-us .main-us .us .us__container .us__img {
-    width: 15rem;
-    height: 15rem;
-    margin: 0 auto 1rem;
-  }
-  .body-us .main-us .us .us__container h2 {
-    width: 15rem;
-    height: 6rem;
-    margin: 0 auto;
-    font-size: 2rem;
-  }
-  .body-us .main-us .mission p {
-    font-size: 1.5rem;
-  }
-  .body-us .main-us .mission p:last-child {
-    position: static;
-    font-size: 1.2rem;
-    transform: none;
-    inline-size: 70%;
-    margin: auto;
-    transform: rotateZ(-12deg);
-  }
-  .body-us .foot-us {
-    margin-top: 0;
-  }
-
-  .body-market {
-    background: cover no-repeat;
-    background-position: -70rem bottom;
-    background-attachment: fixed;
-  }
-  .body-market .main-market {
-    margin-top: 3rem;
-  }
-
-  .body-gallery {
-    background-position: -76rem -55rem;
-  }
-  .body-gallery .main-gallery {
-    margin-top: 6rem;
-    width: 80%;
-    grid-template-columns: repeat(2, 10rem);
-    grid-auto-rows: 15rem;
-    justify-content: center;
-  }
-  .body-gallery .main-gallery img:first-child {
-    grid-column: span 2;
-    object-position: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(2) {
-    grid-row: unset;
-    height: 100%;
-    object-position: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(4) {
-    grid-column: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(6) {
-    grid-row: unset;
-    height: 100%;
-  }
-  .body-gallery .main-gallery img:nth-child(7) {
-    height: 100%;
-  }
-  .body-gallery .main-gallery img:nth-child(8) {
-    grid-row: unset;
-    height: 100%;
-  }
-  .body-gallery .main-gallery img:nth-child(13) {
-    grid-column: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(17) {
-    grid-column: unset;
-    object-position: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(21) {
-    grid-row: unset;
-    height: 100%;
-  }
-  .body-gallery .main-gallery img:nth-child(23) {
-    grid-column: unset;
-    grid-row: unset;
-    height: 100%;
-  }
-  .body-gallery .main-gallery img:nth-child(27) {
-    grid-column: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(28) {
-    grid-column: unset;
-    object-position: unset;
-  }
-  .body-gallery .main-gallery img:nth-child(31) {
-    grid-column: span 2;
-    object-position: unset;
-  }
-  .body-gallery .main-gallery img:last-child {
-    grid-column: span 2;
-    object-position: 0 -5rem;
-  }
-  .body-gallery .foot-gallery {
-    margin: 0;
-  }
-
-  .body-contact {
-    background-position: -24rem;
-  }
-  .body-contact .main-contact {
-    width: 90;
-    flex-direction: column;
-    margin-top: 14rem;
-  }
-  .body-contact .main-contact .horror-form input {
-    width: 90%;
-    height: 2.5rem;
-    font-size: 1.5rem;
-  }
-  .body-contact .main-contact .horror-form textarea {
-    width: 90%;
-    background-size: 40%;
-    font-size: 1.5rem;
-  }
-  .body-contact .main-contact .horror-form .more-blood {
-    top: 25.2rem;
-    left: -1rem;
-  }
-  .body-contact .main-contact .horror-form [type=submit] {
-    width: 5rem;
-    margin-right: 1.5rem;
-  }
-  .body-contact .main-contact .game {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -500;
-    padding: 0;
-  }
-  .body-contact .main-contact .game .game-text {
-    position: absolute;
-    font-size: 1rem;
-    top: -8rem;
-    right: 0;
-  }
-  .body-contact .main-contact .game .game-img {
-    position: absolute;
-    top: -7rem;
-    right: 0;
-    width: 6rem;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   body header {
     position: absolute;
     top: 0;
@@ -1240,6 +972,274 @@ body footer .spoti iframe:hover {
   }
   .body-contact .main-contact .game .game-img {
     width: 8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body header {
+    position: absolute;
+    top: 0;
+  }
+  body header nav ul {
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+    margin-right: 1.5rem;
+  }
+  body header nav ul li {
+    margin: 0.3rem;
+  }
+  body header nav ul li a {
+    font-size: 1.1rem;
+  }
+  body .main {
+    margin-top: 7rem;
+  }
+  body footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  body footer .social-media {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  body footer .social-media a {
+    font-size: 1.8rem;
+    margin: 0 0.9rem;
+  }
+  body footer address {
+    order: -1;
+    margin-bottom: 0.7rem;
+    width: 100%;
+    justify-content: center;
+  }
+  body footer address .fas {
+    font-size: 3rem;
+  }
+  body footer address .place p {
+    font-size: 2rem;
+  }
+  body footer .spoti {
+    padding: 0.5rem;
+  }
+  body footer .spoti iframe {
+    margin: 0;
+  }
+
+  .body-index {
+    min-height: 100vh;
+    background-position: -45rem;
+  }
+  .body-index .main-index {
+    margin-top: 10rem;
+  }
+  .body-index .main-index .help h1 {
+    top: 3.5rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
+  }
+  .body-index .main-index .help .scream img {
+    width: 100%;
+  }
+  .body-index .main-index .call {
+    margin: 3.5rem 0;
+    width: 80%;
+  }
+  .body-index .main-index .call h2 {
+    font-size: 3rem;
+    text-shadow: 0.5px 0.5px 0.5px #1d1c1c, -0.5px -0.5px 0.5px #1d1c1c;
+  }
+  .body-index .main-index .call h2 span {
+    font-size: 2.8rem;
+  }
+  .body-index .main-index .call h3 {
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .body-us {
+    background: cover no-repeat;
+    background-position: -73rem;
+    background-attachment: fixed;
+  }
+  .body-us .feel {
+    top: 4rem;
+    left: 0.1rem;
+    font-size: 2rem;
+    inline-size: 50%;
+    text-align: center;
+  }
+  .body-us .main-us {
+    margin-top: 8rem;
+  }
+  .body-us .main-us .crazy {
+    font-size: 1.5rem;
+    margin: 0;
+    transform: translateX(-1rem) translateY(0rem) rotateZ(5deg);
+    width: 10rem;
+  }
+  .body-us .main-us .us {
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 1.5rem;
+  }
+  .body-us .main-us .us .us__container {
+    margin: 0 rem;
+  }
+  .body-us .main-us .us .us__container .us__img {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto 1rem;
+  }
+  .body-us .main-us .us .us__container h2 {
+    width: 15rem;
+    height: 6rem;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  .body-us .main-us .mission p {
+    font-size: 1.5rem;
+  }
+  .body-us .main-us .mission p:last-child {
+    position: static;
+    font-size: 1.2rem;
+    transform: none;
+    inline-size: 70%;
+    margin: auto;
+    transform: rotateZ(-12deg);
+  }
+  .body-us .foot-us {
+    margin-top: 0;
+  }
+
+  .body-market {
+    background: cover no-repeat;
+    background-position: -70rem bottom;
+    background-attachment: fixed;
+  }
+  .body-market .main-market {
+    margin-top: 3rem;
+  }
+
+  .body-gallery {
+    background-position: -76rem -55rem;
+  }
+  .body-gallery .main-gallery {
+    margin: 6rem 0 2rem;
+    width: 80%;
+    grid-template-columns: repeat(2, 10rem);
+    grid-auto-rows: 15rem;
+    justify-content: center;
+  }
+  .body-gallery .main-gallery img:first-child {
+    grid-column: span 2;
+    object-position: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(2) {
+    grid-row: unset;
+    height: 100%;
+    object-position: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(4) {
+    grid-column: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(6) {
+    grid-row: unset;
+    height: 100%;
+  }
+  .body-gallery .main-gallery img:nth-child(7) {
+    height: 100%;
+  }
+  .body-gallery .main-gallery img:nth-child(8) {
+    grid-row: unset;
+    height: 100%;
+  }
+  .body-gallery .main-gallery img:nth-child(13) {
+    grid-column: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(17) {
+    grid-column: unset;
+    object-position: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(21) {
+    grid-row: unset;
+    height: 100%;
+  }
+  .body-gallery .main-gallery img:nth-child(23) {
+    grid-column: unset;
+    grid-row: unset;
+    height: 100%;
+  }
+  .body-gallery .main-gallery img:nth-child(27) {
+    grid-column: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(28) {
+    grid-column: unset;
+    object-position: unset;
+  }
+  .body-gallery .main-gallery img:nth-child(31) {
+    grid-column: span 2;
+    object-position: unset;
+  }
+  .body-gallery .main-gallery img:last-child {
+    grid-column: span 2;
+    object-position: 0 -5rem;
+  }
+  .body-gallery .foot-gallery {
+    margin: 0;
+  }
+
+  .body-contact {
+    background-position: -24rem;
+  }
+  .body-contact .main-contact {
+    width: 90;
+    flex-direction: column;
+    margin: 14rem 0 -1rem;
+  }
+  .body-contact .main-contact .horror-form input {
+    width: 90%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .body-contact .main-contact .horror-form textarea {
+    width: 90%;
+    background-size: 40%;
+    font-size: 1.5rem;
+  }
+  .body-contact .main-contact .horror-form .more-blood {
+    top: 24.9rem;
+    left: -1rem;
+  }
+  .body-contact .main-contact .horror-form [type=submit] {
+    width: 5rem;
+    margin-right: 1.5rem;
+  }
+  .body-contact .main-contact .game {
+    top: 0;
+    right: 0.3rem;
+    bottom: 0;
+    left: 0;
+    z-index: -500;
+    padding: 0;
+  }
+  .body-contact .main-contact .game .game-text {
+    position: absolute;
+    font-size: 1rem;
+    top: -8rem;
+    right: 0;
+  }
+  .body-contact .main-contact .game .game-img {
+    position: absolute;
+    top: -7rem;
+    right: 0;
+    width: 6rem;
   }
 }
 
