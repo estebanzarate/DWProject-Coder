@@ -1,7 +1,7 @@
 .body-gallery {
     @include bgImg(black, no-repeat, bottom center, fixed);
     .main-gallery {
-        margin-bottom: 3rem;
+        margin: 8rem 0 1rem;
         width: 80%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));

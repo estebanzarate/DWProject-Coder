@@ -1,72 +1,72 @@
 @media screen and (max-width: 480px) {
 
-body {
-	header {
-		position: absolute;
-		top: 0;
-		nav {
-			ul {
-				justify-content: center;
-				align-items: center;
-				height: 4rem;
-				li {
-					margin: .3rem;
-					a {
-						font-size: .9rem;
-						margin: .5rem;
+	// all
+	body {
+		header {
+			position: absolute;
+			top: 0;
+			nav {
+				ul {
+					justify-content: flex-end;
+					align-items: center;
+					height: 4rem;
+					margin-right: 1.5rem;
+					li {
+						margin: .3rem;
+						a {
+							font-size: 1.1rem;
+						}
 					}
 				}
 			}
 		}
-	}
 
-	.main {
-		margin-top: 7rem;
-	}
-
-	footer {
-		margin-top: 5rem;
-		flex-direction: column;
-		justify-content: flex-end;
-		.social-media {
-			flex-direction: row;
-			justify-content: center;
-			width: 100%;
-			margin-bottom: 1rem;
-			a {
-				font-size: 1.8rem;
-				margin: 0 .9rem;
-			}
+		.main {
+			margin-top: 7rem;
 		}
-		address {
-			order: -1;
-			margin-bottom: .7rem;
-			width: 100%;
-			justify-content: center;
-			.fas {
-				font-size: 3rem;
+
+		footer {
+			margin-top: 5rem;
+			flex-direction: column;
+			justify-content: flex-end;
+			.social-media {
+				flex-direction: row;
+				justify-content: center;
+				width: 100%;
+				margin-bottom: 1rem;
+				a {
+					font-size: 1.8rem;
+					margin: 0 .9rem;
+				}
 			}
-			.place {
-				p {
-					font-size: 2rem;
+			address {
+				order: -1;
+				margin-bottom: .7rem;
+				width: 100%;
+				justify-content: center;
+				.fas {
+					font-size: 3rem;
+				}
+				.place {
+					p {
+						font-size: 2rem;
+					}
+				}
+			}
+			.spoti {
+				padding: .5rem;
+				iframe {
+					margin: 0;
 				}
 			}
 		}
-		.spoti {
-			padding: .5rem;
-			iframe {
-				margin: 0;
-			}
-		}
 	}
-	
-}
+	// all
 
-
+	// index
 	.body-index {
 		min-height: 100vh;
-		background-position: -33rem;
-		background-attachment: fixed;
+		background-position: -48rem;
 		.main-index {
 			margin-top: 10rem;
 			.help {
@@ -100,11 +100,12 @@ body {
 			}
 		}
 	}
+	// index
 
 	// us
 	.body-us {
 		background: cover no-repeat;
-		background-position: 80%;
+		background-position: -73rem;
 		background-attachment: fixed;
 		.feel {
 			top: 4rem;
@@ -162,14 +163,20 @@ body {
 	}
 	// us
 
+	// market
 	.body-market {
+		background: cover no-repeat;
+		background-position: -70rem bottom;
+		background-attachment: fixed;
 		.main-market {
 			margin-top: 3rem;
 		}
 	}
+	// market
 	
 	// gallery
 	.body-gallery {
+		background-position: -76rem -55rem;
 		.main-gallery {
 			margin-top: 6rem;
 			width: 80%;
@@ -244,12 +251,13 @@ body {
 				object-position: 0 -5rem;
 			}
 		}
-	}
-	.foot-gallery {
-		margin: 0;
+		.foot-gallery {
+			margin: 0;
+		}
 	}
 	// gallery
 	
+	// contact
 	.body-contact {
 		background-position: -24rem;
 		.main-contact {
@@ -268,7 +276,7 @@ body {
 					font-size: 1.5rem;
 				}
 				.more-blood {
-					top: 25.3rem;
+					top: 25.2rem;
 					left: -1rem;
 				}
 				[type="submit"] {
@@ -283,22 +291,203 @@ body {
 				left: 0;
 				z-index: -500;
 				padding: 0;
-			.game-text {
-				position: absolute;
-				font-size: 1rem;
-				top: -8rem;
-				right: 0;
-			}
-			.game-img {
-				position: absolute;
-				top: -7rem;
-				right: 0;
-				width: 6rem;
+				.game-text {
+					position: absolute;
+					font-size: 1rem;
+					top: -8rem;
+					right: 0;
+				}
+				.game-img {
+					position: absolute;
+					top: -7rem;
+					right: 0;
+					width: 6rem;
+				}
 			}
 		}
 	}
-		.foot-contact {
-			margin-top: 5rem;
+	// contact
+}
+
+@media screen and (min-width:768px) {
+
+	// all
+	body {
+		header {
+			position: absolute;
+			top: 0;
+			nav {
+				ul {
+					justify-content: right;
+					align-items: center;
+					height: 4rem;
+					margin-right: 2rem;
+					li {
+						margin: .3rem;
+						a {
+							font-size: 1.2rem;
+							margin: .5rem;
+						}
+					}
+				}
+			}
+		}
+
+		.main {
+			margin-top: 7rem;
+		}
+
+		footer {
+			margin-top: 3rem;
+			display: grid;
+			grid-template-columns: 10% 40% 50%;
+			.social-media {
+				width: 100%;
+				a {
+					margin: 0 0 .5rem;
+				}
+			}
+			address {
+				align-self: center;
+				padding: 1rem;
+				.fas {
+					font-size: 3rem;
+				}
+				.place {
+					p {
+						font-size: 1.7rem;
+					}
+				}
+			}
+			.spoti {
+				justify-content: center;
+				align-items: flex-end;
+				flex: unset;
+				padding: 1rem;
+				iframe {
+					margin: 0;
+				}
+			}
 		}
 	}
+	// all
+
+	// index
+	.body-index {
+		background-position: -33rem -10rem;
+		.main-index {
+			margin-top: 10rem;
+			flex: unset;
+			.help {
+				h1 {
+					font-size: 5rem;
+					letter-spacing: .30rem;
+					text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
+					top: 8rem;
+				}
+				.scream {
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.call {
+				width: 80%;
+				h2 {
+					font-size: 3rem;
+					text-shadow: .5px .5px .5px rgb(29, 28, 28), -.5px -.5px .5px rgb(29, 28, 28);
+					span {
+						font-size: 2.8rem;
+					}
+				}
+				h3 {
+					top: 1.5rem;
+					right: 8.5rem;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+	// index
+
+	// us
+	.body-us {
+		header {
+			.feel {
+				font-size: 2rem;
+			}
+		}
+		.main-us {
+			margin: 10rem 0 0 0;
+			width: 100%;
+			.crazy {
+				font-size: 2rem;
+				transform: rotateZ(3deg) translateX(-1rem);
+			}
+			.us {
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: -1rem;
+				.us__container {
+					align-items: center;
+					.us__img {
+						width: 15rem;
+						height: 15rem;
+					}
+				}
+			}
+			.mission {
+				width: 80%;
+				margin: 2rem 0 -3rem;
+				p {
+					font-size: 2.2rem;
+				}
+				p:last-child {
+					top: 3rem;
+					left: 8rem;
+					font-size: 1.5rem;
+					color: rgba(251, 251, 251, .5);
+				}
+			}
+		}
+	}
+	// us
+
+	// market
+	.body-market {
+		.main-market {
+			width: 100%;
+			margin: 6rem 0 0;
+		}
+	}
+	// market
+
+	// gallery
+	.body-gallery {
+		.main-gallery {
+			width: 90%;
+			margin: 5rem 0 -1rem;
+			img:nth-child(25), img:nth-child(26) {
+				height: 100%;
+			}
+		}
+	}
+	// gallery
+
+	// contact
+	.body-contact {
+		.main-contact {
+			.game {
+				bottom: 18rem;
+				.game-text {
+					font-size: 1.6rem;
+					transform: translateX(-4rem) rotateZ(-30deg);
+				}
+				.game-img {
+					width: 8rem;
+				}
+			}
+		}
+	}
+	// contact
 }
