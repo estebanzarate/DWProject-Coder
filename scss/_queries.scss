@@ -14,7 +14,7 @@
 					li {
 						margin: .3rem;
 						a {
-							font-size: 1.2rem;
+							font-size: 1rem;
 							margin: .5rem;
 						}
 					}
@@ -107,7 +107,7 @@
 			}
 		}
 		.main-us {
-			margin: 10rem 0 0 0;
+			margin: 10rem 0 4rem;
 			width: 100%;
 			.crazy {
 				font-size: 2rem;
@@ -116,7 +116,6 @@
 			.us {
 				flex-wrap: wrap;
 				justify-content: center;
-				margin-bottom: -1rem;
 				.us__container {
 					align-items: center;
 					.us__img {
@@ -459,7 +458,7 @@
 					font-size: 1.5rem;
 				}
 				.more-blood {
-					top: 24.9rem;
+					top: 25.1rem;
 					left: -1rem;
 				}
 				[type="submit"] {

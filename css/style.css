@@ -519,7 +519,7 @@ body footer .spoti iframe:hover {
 @keyframes usDes {
   75% {
     text-shadow: 2px 2px 3px red, -1px -1px 3px red;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(22, 21, 21, 0.8);
   }
   100% {
     text-shadow: none;
@@ -844,7 +844,7 @@ body footer .spoti iframe:hover {
     margin: 0.3rem;
   }
   body header nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.5rem;
   }
   body .main {
@@ -917,7 +917,7 @@ body footer .spoti iframe:hover {
     font-size: 2rem;
   }
   .body-us .main-us {
-    margin: 10rem 0 0 0;
+    margin: 10rem 0 4rem;
     width: 100%;
   }
   .body-us .main-us .crazy {
@@ -927,7 +927,6 @@ body footer .spoti iframe:hover {
   .body-us .main-us .us {
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -1rem;
   }
   .body-us .main-us .us .us__container {
     align-items: center;
@@ -1214,7 +1213,7 @@ body footer .spoti iframe:hover {
     font-size: 1.5rem;
   }
   .body-contact .main-contact .horror-form .more-blood {
-    top: 24.9rem;
+    top: 25.1rem;
     left: -1rem;
   }
   .body-contact .main-contact .horror-form [type=submit] {
