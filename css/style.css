@@ -56,14 +56,12 @@ body header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 200;
 }
 body header img {
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.6;
-  z-index: -400;
 }
 body header ul {
   height: 5rem;
@@ -76,6 +74,7 @@ body header ul li {
   text-align: center;
   width: fit-content;
   margin-right: 3rem;
+  z-index: 30;
 }
 body header ul li a {
   color: white;
@@ -104,7 +103,7 @@ body main {
 body footer {
   width: 100%;
   display: flex;
-  z-index: 1000;
+  z-index: 10;
 }
 body footer .social-media {
   display: flex;
@@ -194,18 +193,19 @@ body footer .spoti iframe:hover {
   flex-direction: column;
   align-items: center;
 }
-.body-index .main-index .help h1 {
+.body-index .main-index .help p {
   position: absolute;
-  top: 20%;
+  top: 11rem;
   font-family: "Londrina Shadow", cursive;
   font-size: 8rem;
   color: #cf0000;
   text-align: center;
   letter-spacing: 0.4rem;
-  text-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+  text-shadow: 2px 2px 10px #fff, -2px -2px 5px #fff;
+  font-weight: 600;
   transform: rotateZ(8deg);
-  z-index: 200;
   animation: help 1s ease 1;
+  z-index: 5;
 }
 .body-index .main-index .help .scream {
   width: 100%;
@@ -226,7 +226,7 @@ body footer .spoti iframe:hover {
 .body-index .main-index .help .scream img {
   width: 60%;
   animation: move 10s ease-in-out infinite;
-  z-index: -500;
+  z-index: -2;
 }
 @keyframes help {
   0% {
@@ -460,7 +460,6 @@ body footer .spoti iframe:hover {
   text-align: center;
   font-family: friday;
   font-size: 4rem;
-  z-index: 500;
   color: #e10000;
   align-self: flex-end;
   transform: rotateZ(3deg) translateX(10rem);
@@ -471,7 +470,6 @@ body footer .spoti iframe:hover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
-  z-index: 500;
 }
 .body-us .main-us .us .us__container {
   display: flex;
@@ -533,7 +531,6 @@ body footer .spoti iframe:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 500;
 }
 .body-us .main-us .mission p {
   font-family: veintiocho;
@@ -766,7 +763,7 @@ body footer .spoti iframe:hover {
 }
 .body-contact .main-contact .horror-form textarea {
   height: 20rem;
-  background: rgba(46, 42, 42, 0.5) url("../images/screamx.png") no-repeat right bottom;
+  background: rgba(46, 42, 42, 0.5) url("../images/contact/screamx.png") no-repeat right bottom;
   background-size: contain;
   resize: none;
   border-radius: 0.5rem;
@@ -888,7 +885,7 @@ body footer .spoti iframe:hover {
     margin-top: 10rem;
     flex: unset;
   }
-  .body-index .main-index .help h1 {
+  .body-index .main-index .help p {
     font-size: 5rem;
     letter-spacing: 0.3rem;
     text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
@@ -913,6 +910,9 @@ body footer .spoti iframe:hover {
     font-size: 3rem;
   }
 
+  .body-us {
+    background-position: -47rem -10rem;
+  }
   .body-us header .feel {
     font-size: 2rem;
   }
@@ -949,6 +949,9 @@ body footer .spoti iframe:hover {
     color: rgba(251, 251, 251, 0.5);
   }
 
+  .body-market {
+    background-position: -48rem -14rem;
+  }
   .body-market .main-market {
     width: 100%;
     margin: 6rem 0 0;
@@ -1035,9 +1038,12 @@ body footer .spoti iframe:hover {
   .body-index .main-index {
     margin-top: 10rem;
   }
-  .body-index .main-index .help h1 {
-    top: 3.5rem;
-    font-size: 2.5rem;
+  .body-index .main-index .help {
+    width: 80%;
+  }
+  .body-index .main-index .help p {
+    top: 7.5rem;
+    font-size: 3rem;
     letter-spacing: 0.25rem;
     text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
   }
@@ -1056,8 +1062,8 @@ body footer .spoti iframe:hover {
     font-size: 2.8rem;
   }
   .body-index .main-index .call h3 {
-    top: 1.5rem;
-    right: 1rem;
+    top: 1.4rem;
+    right: -0.5rem;
     font-size: 3.5rem;
   }
 
@@ -1127,7 +1133,9 @@ body footer .spoti iframe:hover {
   }
 
   .body-gallery {
-    background-position: -76rem -55rem;
+    background: cover no-repeat;
+    background-position: -46rem -25rem;
+    background-attachment: fixed;
   }
   .body-gallery .main-gallery {
     margin: 6rem 0 2rem;

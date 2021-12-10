@@ -68,7 +68,7 @@
 			margin-top: 10rem;
 			flex: unset;
 			.help {
-				h1 {
+				p {
 					font-size: 5rem;
 					letter-spacing: .30rem;
 					text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
@@ -101,6 +101,7 @@
 
 	// us
 	.body-us {
+		background-position: -47rem -10rem;
 		header {
 			.feel {
 				font-size: 2rem;
@@ -143,6 +144,7 @@
 
 	// market
 	.body-market {
+		background-position: -48rem -14rem;
 		.main-market {
 			width: 100%;
 			margin: 6rem 0 0;
@@ -253,9 +255,10 @@
 		.main-index {
 			margin-top: 10rem;
 			.help {
-				h1 {
-					top: 3.5rem;
-					font-size: 2.5rem;
+				width: 80%;
+				p {
+					top: 7.5rem;
+					font-size: 3rem;
 					letter-spacing: .25rem;
 					text-shadow: 1px 1px 4px #000, -1px -1px 4px #fff;
 				}
@@ -276,8 +279,8 @@
 					}
 				}
 				h3 {
-					top: 1.5rem;
-					right: 1rem;
+					top: 1.4rem;
+					right: -.5rem;
 					font-size: 3.5rem;
 				}
 			}
@@ -358,7 +361,9 @@
 	
 	// gallery
 	.body-gallery {
-		background-position: -76rem -55rem;
+		background: cover no-repeat;
+		background-position: -46rem -25rem;
+		background-attachment: fixed;
 		.main-gallery {
 			margin: 6rem 0 2rem;
 			width: 80%;

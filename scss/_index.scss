@@ -13,16 +13,17 @@
             align-items: center;
             p {
                 position: absolute;
-                top: 20%;
+                top: 11rem;
                 font-family: 'Londrina Shadow', cursive;
                 font-size: 8rem;
                 color: rgb(207, 0, 0);
                 text-align: center;
                 letter-spacing: .4rem;
-                text-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff;
+                text-shadow: 2px 2px 10px #fff, -2px -2px 5px #fff;
+                font-weight: 600;
                 transform: rotateZ(8deg);
-                z-index: 200;
                 animation: help 1s ease 1;
+                z-index: 5;
             }
             .scream {
                 width: 100%;
@@ -42,7 +43,7 @@
                 img {
                     width: 60%;
                     animation: move 10s ease-in-out infinite;
-                    z-index: -500;
+                    z-index: -2;
                 }
             }
             @keyframes help {
@@ -70,7 +71,6 @@
                 text-align: center;
                 font-weight: initial;
                 color: rgb(80, 80, 80);
-                
                 span {
                     color: whitesmoke;
                     transform: translateY(10px);
