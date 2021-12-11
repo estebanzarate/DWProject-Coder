@@ -6,7 +6,6 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        z-index: 200;
         .horror-form {
             position: relative;
             display: flex;
@@ -45,7 +44,6 @@
                 width: 60%;
                 top: 25.5rem;
                 left: -3.8rem;
-                z-index: -200;
                 opacity: .6;
             }
             textarea:hover, input:hover {

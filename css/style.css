@@ -74,7 +74,7 @@ body header ul li {
   text-align: center;
   width: fit-content;
   margin-right: 3rem;
-  z-index: 30;
+  z-index: 2;
 }
 body header ul li a {
   color: white;
@@ -103,7 +103,6 @@ body main {
 body footer {
   width: 100%;
   display: flex;
-  z-index: 10;
 }
 body footer .social-media {
   display: flex;
@@ -186,6 +185,7 @@ body footer .spoti iframe:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  z-index: -1;
 }
 .body-index .main-index .help {
   width: 50%;
@@ -205,7 +205,6 @@ body footer .spoti iframe:hover {
   font-weight: 600;
   transform: rotateZ(8deg);
   animation: help 1s ease 1;
-  z-index: 5;
 }
 .body-index .main-index .help .scream {
   width: 100%;
@@ -226,7 +225,6 @@ body footer .spoti iframe:hover {
 .body-index .main-index .help .scream img {
   width: 60%;
   animation: move 10s ease-in-out infinite;
-  z-index: -2;
 }
 @keyframes help {
   0% {
@@ -565,7 +563,6 @@ body footer .spoti iframe:hover {
   grid-template-rows: auto;
   gap: 3rem 4rem;
   justify-content: center;
-  z-index: 500;
   padding: 2rem;
 }
 .body-market .main-market .buy-item {
@@ -589,7 +586,6 @@ body footer .spoti iframe:hover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 200;
   opacity: 0;
   width: 100%;
   height: 20rem;
@@ -669,7 +665,6 @@ body footer .spoti iframe:hover {
   object-fit: cover;
   border-radius: 0.5rem;
   opacity: 0.6;
-  z-index: 300;
 }
 .body-gallery .main-gallery img:hover {
   outline: 3px inset red;
@@ -740,7 +735,6 @@ body footer .spoti iframe:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 200;
 }
 .body-contact .main-contact .horror-form {
   position: relative;
@@ -781,7 +775,6 @@ body footer .spoti iframe:hover {
   width: 60%;
   top: 25.5rem;
   left: -3.8rem;
-  z-index: -200;
   opacity: 0.6;
 }
 .body-contact .main-contact .horror-form textarea:hover, .body-contact .main-contact .horror-form input:hover {
