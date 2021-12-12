@@ -6,7 +6,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        z-index: -1;
         .help {
             width: 50%;
             display: flex;
@@ -24,6 +23,7 @@
                 font-weight: 600;
                 transform: rotateZ(8deg);
                 animation: help 1s ease 1;
+                z-index: 5;
             }
             .scream {
                 width: 100%;

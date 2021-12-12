@@ -21,6 +21,7 @@ body {
 		position: fixed;
 		top: 0;
 		width: 100%;
+		z-index: 5;
 		img {
 			position: fixed;
 			top: 0;
@@ -37,7 +38,7 @@ body {
 				text-align: center;
 				width: fit-content;
 				margin-right: 3rem;
-				z-index: 2;
+				z-index: 5;
 				a {
 					color: rgb(255, 255, 255);
 					text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
@@ -71,6 +72,7 @@ body {
 	footer {
 		width: 100%;
 		display: flex;
+		z-index: 10;
 		.social-media {
 			display: flex;
 			flex-direction: column;
