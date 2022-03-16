@@ -670,11 +670,11 @@ body footer .spoti iframe:hover {
   object-fit: cover;
   border-radius: 0.5rem;
   opacity: 0.6;
+  transition: all 0.2s;
 }
 .body-gallery .main-gallery img:hover {
   outline: 3px inset red;
   opacity: 1;
-  transition: 0.5s linear;
 }
 .body-gallery .main-gallery img:first-child {
   grid-column: span 2;
