@@ -3,7 +3,7 @@ document.addEventListener('click', e => {
 		const galleryImgModal = document.querySelector('.gallery-img-modal');
 		galleryImgModal.innerHTML += `
 			<div class='img-modal-container'>
-				<img src='${ String(e.target.src).replace('https://estebanzarate.github.io/DWProject-Coder', '') }'  alt='${e.target.alt}'>
+				<img src='${ String(e.target.src).replace('https://estebanzarate.github.io/DWProject-Coder', '..') }'  alt='${e.target.alt}'>
 			</div>
 		`;
 		galleryImgModal.classList.add('img-modal-visible');
