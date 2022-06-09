@@ -653,6 +653,40 @@ body footer .spoti iframe:hover {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-attachment: fixed;
+  position: relative;
+}
+.body-gallery .gallery-img-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.body-gallery .gallery-img-modal .img-modal-container {
+  backdrop-filter: blur(20px);
+  padding: 1rem;
+  max-width: 90%;
+  max-height: 90%;
+  outline: 2px solid red;
+  outline-offset: 3px;
+  display: flex;
+}
+.body-gallery .gallery-img-modal .img-modal-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.body-gallery .img-modal-visible {
+  opacity: 1;
+  visibility: visible;
 }
 .body-gallery .main-gallery {
   margin: 8rem 0 1rem;
@@ -675,6 +709,10 @@ body footer .spoti iframe:hover {
 .body-gallery .main-gallery img:hover {
   outline: 3px inset red;
   opacity: 1;
+  cursor: pointer;
+}
+.body-gallery .main-gallery img:active {
+  transform: scale(0.9);
 }
 .body-gallery .main-gallery img:first-child {
   grid-column: span 2;
@@ -1135,6 +1173,12 @@ body footer .spoti iframe:hover {
     background: cover no-repeat;
     background-position: -46rem -25rem;
     background-attachment: fixed;
+  }
+  .body-gallery .gallery-img-modal {
+    padding: 1rem;
+  }
+  .body-gallery .gallery-img-modal .img-modal-container {
+    width: 100%;
   }
   .body-gallery .main-gallery {
     margin: 6rem 0 2rem;

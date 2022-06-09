@@ -364,6 +364,12 @@
 		background: cover no-repeat;
 		background-position: -46rem -25rem;
 		background-attachment: fixed;
+		.gallery-img-modal {
+			padding: 1rem;
+			.img-modal-container {
+				width: 100%;
+			}
+		}
 		.main-gallery {
 			margin: 6rem 0 2rem;
 			width: 80%;
