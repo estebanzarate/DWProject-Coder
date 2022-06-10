@@ -1,7 +1,7 @@
 .body-gallery {
     @include bgImg(black, no-repeat, bottom center, fixed);
 	position: relative;
-	.gallery-img-modal {
+	.gallery-modal {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -15,19 +15,21 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: all .3s linear;
-		.img-modal-container {
-			backdrop-filter: blur(20px);
-			padding: 1rem;
-			max-width: 90%;
-			max-height: 90%;
-			outline: 2px solid red;
-			outline-offset: 3px;
-			display: flex;
-				img {
-					width: 100%;
-					height: auto;
-					object-fit: cover;
-				}
+		.gallery-modal-container {
+			width: 90%;
+			height: 90%;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 100%;
+			justify-content: center;
+			justify-items: center;
+			align-content: center;
+			align-items: center;
+			.gallery-modal-img {
+				height: 100%;
+				outline: 2px solid red;
+				outline-offset: 10px;
+			}
 		}
 	}	
 	.img-modal-visible {

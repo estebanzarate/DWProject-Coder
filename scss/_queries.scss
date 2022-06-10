@@ -154,6 +154,14 @@
 
 	// gallery
 	.body-gallery {
+		.gallery-modal {
+			.gallery-modal-container {
+				.gallery-modal-img {
+					width: 100%;
+					height: unset;
+				}
+			}
+		}
 		.main-gallery {
 			width: 90%;
 			margin: 5rem 0 -1rem;
@@ -364,10 +372,12 @@
 		background: cover no-repeat;
 		background-position: -46rem -25rem;
 		background-attachment: fixed;
-		.gallery-img-modal {
-			padding: 1rem;
-			.img-modal-container {
-				width: 100%;
+		.gallery-modal {
+			.gallery-modal-container {
+				.gallery-modal-img {
+					width: 100%;
+					height: unset;
+				}
 			}
 		}
 		.main-gallery {
